@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+
+<div class="ui main text container">
+  <div class="ui huge header">Blog</div>
+  <div class="ui top attached segment">
+    <div class="ui divided items">
+      <% blogs.forEach(function(v){ %>
+        <div class="item">
+          <div class=" rounded image">
+            <img src="<%= v.image %>" alt="blog image"></img>
+          </div>
+          <div class="content">
+            <a class="header" href="/blogs/<%=v._id%>" ><%=v.name%></a>
+            <div class="meta">
+              <span><%=v.created.toDateString()%></span>
+            </div>
+            <div class="description">
+              <p><%-v.body.substring(0.150)%>...</p>
+            </div>
+            <div class="extra">
+              <a href="/blogs/<%=v._id%>" class="ui floated  basic button blue" >Read more <i class='right chevron icon'></i></a>
+            </div>
+          </div>
+
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+
+<% include partials/footer.ejs %>

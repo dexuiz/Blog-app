@@ -1,0 +1,22 @@
+<% include partials/header.ejs %>
+
+<div class="ui main text container segment">
+  <div class="ui huge header">New blog</div>
+  <form action="/blogs" method="POST" class="ui form">
+    <div class="field">
+        <label>name</label>
+        <input type="text"  name="blog[name]" placeholder="title">
+    </div>
+    <div class="field">
+      <label>image</label>
+      <input type="text" name="blog[image]" placeholder="image">
+    </div>
+    <div class="field">
+      <label>blog content</label>
+      <textarea name="blog[body]" placeholder="Type your heart out :)"></textarea>
+    </div>
+    <button type ="submit" class="ui violet basic button big">Submit</button>
+  </form>
+</div>
+
+<% include partials/footer.ejs %>

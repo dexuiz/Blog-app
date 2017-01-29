@@ -1,0 +1,26 @@
+{
+  "name": "blog-app",
+  "version": "1.0.0",
+  "description": "blog app to learn RESTful routes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexuiz/Blog-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dexuiz/Blog-app/issues"
+  },
+  "homepage": "https://github.com/dexuiz/Blog-app#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.8",
+    "nodemon": "^1.11.0"
+  }
+}
