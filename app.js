@@ -20,7 +20,7 @@ var blogSchema = new mongoose.Schema({
 });
 
 var blog= mongoose.model("blog",blogSchema);
-
+var port = process.env.PORT || 3000;
 // blog.create({
 //   name:"test-blog",
 //   image:"http://panacheschool.com/wp-content/uploads/2015/04/photography.jpg",
@@ -108,6 +108,6 @@ app.delete("/blogs/:id",function(req,res){
 })
 
 
-app.listen(3000,function(){
+app.listen(port,function(){
   console.log("server is running on port 3000")
 })
