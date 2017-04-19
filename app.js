@@ -7,8 +7,8 @@ var methodOverride  = require("method-override");
 var sanitizer =require("express-sanitizer");
 var current;
 
-// mongoose.connect("mongodb://dexuiz:deval1997@ds137090.mlab.com:37090/blog-app");
-mongoose.connect("mongodb://localhost/blogapp2");
+ mongoose.connect("mongodb://dexuiz:deval1997@ds015584.mlab.com:15584/blogapp2");
+//mongoose.connect("mongodb://localhost/blogapp2");
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
