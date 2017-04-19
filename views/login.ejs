@@ -1,0 +1,20 @@
+<% include partials/header.ejs %>
+
+<div class="ui main text container segment">
+  <div class="ui huge header">Login</div>
+  <form action="/login" method="POST" class="ui form">
+    <div class="field">
+        <label>username</label>
+        <input type="text"  name="user[username]" placeholder="username">
+    </div>
+    <div class="field">
+      <label>password</label>
+      <input type="password" name="user[password]" placeholder="password">
+    </div>
+
+    <button type ="submit" class="ui violet basic button big">Submit</button>
+  </form>
+  or you can <a href="/signup">signup</a> here
+</div>
+
+<% include partials/footer.ejs %>

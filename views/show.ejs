@@ -11,10 +11,12 @@
         <p><%=blog.body%></p>
       </div>
     </div>
+    <% if(blog.author.equals(curr._id)){ %>
     <a href="/blogs/<%=blog._id%>/edit" class="ui basic orange button">Edit</a>
     <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST" id="delete">
       <button type="submit" class="ui red basic button">Delete</button>
     </form>
+    <% } %>
 </div>
 
 <% include partials/footer.ejs %>
